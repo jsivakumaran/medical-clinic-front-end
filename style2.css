@@ -24,6 +24,10 @@
   margin-top: 20px;
 }
 
+.social-media{
+  padding: 5px;
+}
+
 
 .footer {
     position: relative;
@@ -33,7 +37,7 @@
     background-color: #14b8d7;
 
     display: table;
-    text-align: center;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
