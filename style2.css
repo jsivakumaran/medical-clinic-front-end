@@ -1,0 +1,25 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+.awesome{
+    margin: 0 90px;
+}
+
+.navtabs > li{
+        font-family: 'Lato', sans-serif;
+
+  padding-left:90px;
+  padding-right:90px;
+}
+
+.container{
+    margin: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+}
