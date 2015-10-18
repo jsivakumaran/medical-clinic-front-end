@@ -6,19 +6,6 @@
   width:100%;
 }
 
-.nav-pills li {
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    color: #fff;
-    background-color: #14b8d7;
-}
-
-.container{
-  margin: 20px;
-}
 
 .content{
   margin-top: 20px;
@@ -40,4 +27,16 @@
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+
+}
+
+.navbar{
+  background-image: none;
+  background-color: #14b8d7;
+
 }
