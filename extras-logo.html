@@ -4,3 +4,20 @@
     margin-left: 60px;
     margin-right: 60px;
 }
+
+
+$('#idForm').submit(function(){
+      $.ajax({
+          url: "http://estr.herokuapp.com/api/appointments",
+          method: "POST",
+          data: { appointment: {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            password: $('#password'),
+            password_confirmation: $('#password_confirmation') ,
+            phone_number: $('#phone_number').val(),
+            clinic_id: 1
+          }}
+        });
+
+});

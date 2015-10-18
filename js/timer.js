@@ -42,25 +42,22 @@ function displayTimer(res){
     numPatients = getNumPatients();
     console.log("Get num Patients is ", + numPatients);
 
-    // this is the id of the form
-    $("#idForm").submit(function() {
 
-        var url = "http://estr.herokuapp.com/appointments"; // the script where you handle the form input.
-        $.ajax({
-               type: "POST",
-               url: url,
-               data: {
-                 appointment: {
-                   $("#idForm").serialize();
-                 }
-               } // serializes the form's elements.
-               success: function(data)
-               {
-                   alert(data); // show response from the php script.
-               }
-             });
+    $('#idForm').submit(function(event){
+      event.preventDefault();
+          $.ajax({
+              url: "http://estr.herokuapp.com/api/appointments/cor",
+              method: "POST",
+              data: { appointment: {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                password: $('#password').val(),
+                password_confirmation: $('#password_confirmation').val(),
+                phone_number: $('#phone_number').val(),
+                clinic_id: 3
+              }}
+            });
 
-        return false; // avoid to execute the actual submit of the form.
     });
 
 
