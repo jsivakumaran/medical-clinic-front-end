@@ -75,12 +75,11 @@
       </div>
       <div class="col-md-6 sidebar">
         <form id="idForm" action="http://estr.herokuapp.com/appointments" method:"post">
-              <input type="checkbox" id="checkbox" class="form-control" value="1" name="appointment[finished]" id="appointment_finished">
               <input name="name" id="name" class="form-control" placeholder="First and Last Name">
               <input name="email" id="email" class="form-control" placeholder="email">
               <input name="phone_number" id="phone_number" class="form-control" placeholder="6043969220">
-              <input name="password"  id="password" class="form-control" placeholder="password">
-              <input name="password_confirmation" id="password_confirmation" class="form-control" placeholder="password confirmation">
+              <input name="password"  type="password" id="password" class="form-control" placeholder="password">
+              <input name="password_confirmation" type="password" id="password_confirmation" class="form-control" placeholder="password confirmation">
               <input type="submit" class="btn btn-success btn-lrg" value="Submit">
         </form>
           Sidebar content
